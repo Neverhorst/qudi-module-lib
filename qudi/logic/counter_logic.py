@@ -53,7 +53,7 @@ class CounterLogic(LogicBase):
     sigCountFrequencyChanged = QtCore.Signal(float)
     sigSavingStatusChanged = QtCore.Signal(bool)
     sigCountStatusChanged = QtCore.Signal(bool)
-    sigCountingModeChanged = QtCore.Signal(CountingMode)
+    sigCountingModeChanged = QtCore.Signal(object)
 
     # declare connectors
     counter1 = Connector(interface='SlowCounterInterface')
