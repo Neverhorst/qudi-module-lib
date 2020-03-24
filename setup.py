@@ -27,7 +27,10 @@ setup(name='qudi-module-lib',
                 'modular'
                 ],
       license='GPLv3',
-      install_requires=['qudi @ git+https://github.com/Neverhorst/qudi-core.git@master#egg=qudi'],
+      install_requires=['qudi @ git+https://github.com/Neverhorst/qudi-core.git@master#egg=qudi', 
+                        'matplotlib==3.2.1', 
+                        'Pillow==7.0.0',
+                        ],
       python_requires='~=3.7',
       zip_safe=False
       )
